@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { cn } from "@/lib/utils";
 
 const fetchToken = async () => {
-  const response = await fetch("/api/token");
+  const response = await fetch("/api/neo/token");
   if (!response.ok) {
     throw new Error("Failed to fetch token");
   }
